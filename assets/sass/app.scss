@@ -1,0 +1,135 @@
+/*@import "node_modules/bootstrap/dist/css/bootstrap.css";*/
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+@import 'css/font-awesome.min.css';
+
+@font-face {
+  font-family: 'Eagle-Book';
+  src: url('fonts/Eagle-Book.eot?#iefix') format('embedded-opentype'),  url('fonts/Eagle-Book.otf')  format('opentype'),
+	     url('fonts/Eagle-Book.woff') format('woff'), url('fonts/Eagle-Book.ttf')  format('truetype'), url('fonts/Eagle-Book.svg#Eagle-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Museo-700';
+  src: url('fonts/Museo-700.eot?#iefix') format('embedded-opentype'),  url('fonts/Museo-700.otf')  format('opentype'),
+	     url('fonts/Museo-700.woff') format('woff'), url('fonts/Museo-700.ttf')  format('truetype'), url('fonts/Museo-700.svg#Museo-700') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MuseoSans-100';
+  src: url('fonts/MuseoSans-100.eot?#iefix') format('embedded-opentype'),  url('fonts/MuseoSans-100.otf')  format('opentype'),
+	     url('fonts/MuseoSans-100.woff') format('woff'), url('fonts/MuseoSans-100.ttf')  format('truetype'), url('fonts/MuseoSans-100.svg#MuseoSans-100') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MuseoSans-300';
+  src: url('fonts/MuseoSans-300.eot?#iefix') format('embedded-opentype'),  url('fonts/MuseoSans-300.otf')  format('opentype'),
+	     url('fonts/MuseoSans-300.woff') format('woff'), url('fonts/MuseoSans-300.ttf')  format('truetype'), url('fonts/MuseoSans-300.svg#MuseoSans-300') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MuseoSans-500';
+  src: url('fonts/MuseoSans-500.eot?#iefix') format('embedded-opentype'),  url('fonts/MuseoSans-500.otf')  format('opentype'),
+	     url('fonts/MuseoSans-500.woff') format('woff'), url('fonts/MuseoSans-500.ttf')  format('truetype'), url('fonts/MuseoSans-500.svg#MuseoSans-500') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MuseoSans-500Italic';
+  src: url('fonts/MuseoSans-500Italic.eot?#iefix') format('embedded-opentype'),  url('fonts/MuseoSans-500Italic.otf')  format('opentype'),
+	     url('fonts/MuseoSans-500Italic.woff') format('woff'), url('fonts/MuseoSans-500Italic.ttf')  format('truetype'), url('fonts/MuseoSans-500Italic.svg#MuseoSans-500Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MuseoSans-700';
+  src: url('fonts/MuseoSans-700.eot?#iefix') format('embedded-opentype'),  url('fonts/MuseoSans-700.otf')  format('opentype'),
+	     url('fonts/MuseoSans-700.woff') format('woff'), url('fonts/MuseoSans-700.ttf')  format('truetype'), url('fonts/MuseoSans-700.svg#MuseoSans-700') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MuseoSans-900';
+  src: url('fonts/MuseoSans-900.eot?#iefix') format('embedded-opentype'),  url('fonts/MuseoSans-900.otf')  format('opentype'),
+	     url('fonts/MuseoSans-900.woff') format('woff'), url('fonts/MuseoSans-900.ttf')  format('truetype'), url('fonts/MuseoSans-900.svg#MuseoSans-900') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*@import url(https://fonts.googleapis.com/css?family=Roboto);*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100);
+$couleurfond: buttonshadow;
+$couleurfond2: #efefef;
+//$fonttitre: 'Eagle-Book';
+$fonttitre: 'Roboto', sans-serif;
+$fonttexte: 'MuseoSans-500';
+body{
+    background-color: $couleurfond2;
+    font-family: $fonttexte;
+}
+h1,h2,h3,h4{
+    font-family: $fonttitre;
+}
+h1{
+    font-weight: 100;
+}
+h2{
+    font-weight: 100;
+}
+h3{
+    font-weight: 100;
+}
+h4{
+    font-weight: 100;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.circle{
+    float: right;
+/*    -moz-shape-outside: circle(50%);
+    shape-outside: circle(50%);*/
+/*    -webkit-shape-outside: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    -moz-shape-outside: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    shape-outside: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);*/
+    -webkit-shape-outside: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    shape-outside: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+/*    clip-path: circle();*/
+/*    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);*/
+    -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    background-color: #f5f5f5;
+    margin: 20px;
+}
+.circle img{
+/*    border-radius: 90px;*/
+}
+
+.de{
+    float: left;
+    position: relative;
+    margin-left: -100px;
+    shape-outside: ellipse(60% 50% at 10% 50%);
+    width: 200px;
+    height: 200px;
+    shape-margin: 10px;
+    clip-path: ellipse(60% 50% at 10% 50%);
+    background-color: #f5f5f5;
+    margin: 20px;
+}
+.ellipse{
+    background-color: $couleurfond;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    clip-path: ellipse(60% 50% at 10% 50%);
+    top: 50px;
+    left:40px;
+}
